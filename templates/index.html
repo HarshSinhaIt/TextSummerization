@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px; 
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .original-text {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .summarized-text {
+            padding: 20px;
+        }
+        .text-length {
+            font-size: 14px;
+            color: #666;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Text Summarizer</h1>
+        </div>
+        <form action="/analyze" method="POST">
+            <div class="original-text">
+                <label for="original_text">Enter the original text:</label>
+                <textarea id="original_text" name="original_text" rows="10" cols="50">{{ original_text }}</textarea>
+            </div>
+            <button type="submit" value="Summarize" class="submit-btn">Submit</button>
+        </form>
+        
+</body>
+</html>
+
+
+
+
+<!-- {% if doc %}
+        <div class="original-text">
+            <h2>Original Text:</h2>
+            <p>{{ original_text }}</p>
+            <p class="text-length">Original text length: {{ original_len }} words</p>
+            <p class="text-length">Summarized text length: {{ summary_len }} words</p>
+        </div>
+        
+        {% if summary %}
+        <div class="summarized-text">
+            <h2>Summarized Text:</h2>
+            <p>{{ summary }}</p>
+            <p class="text-length">Original text length: {{ original_len }} words</p>
+            <p class="text-length">Summarized text length: {{ summary_len }} words</p>
+        </div>
+        {% endif %}
+        {% endif %}
+    </div> -->
