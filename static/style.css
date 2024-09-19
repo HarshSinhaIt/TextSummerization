@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .original-text, .summarized-text {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-length {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .summarized-text {
+    background-color: #fff;
+    border-color: #ccc;
+  }
